@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chanys.assignment">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Sportify"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".checkingAdminOrCust">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuActivity"
+            android:label="Menu" />
+        <activity
+            android:name=".SportActivity"
+            android:label="Sport"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".BookingActivity"
+            android:label="Booking"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".SignUpActivity"
+            android:label="Sign Up"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BookingConfirm"
+            android:label="Book Court"
+            android:parentActivityName=".MenuActivity" />
+        <activity
+            android:name=".BookingHistory"
+            android:label="Booking History"
+            android:parentActivityName=".MenuActivity" />
+        <activity android:name=".AdminLoginPage"
+            android:label="Admin Login"
+            />
+        <activity android:name=".AdminBookingRecord"
+            android:label="Admin Booking"
+            ></activity>
+    </application>
+
+</manifest>
